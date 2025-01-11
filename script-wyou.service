@@ -1,0 +1,12 @@
+[Unit]
+Description=Run scripts automantically
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/script-wyou/run.sh
+WorkingDirectory=/usr/local/bin/script-wyou
+
+[Install]
+WantedBy=multi-user.target
+
